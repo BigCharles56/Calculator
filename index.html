@@ -4,46 +4,47 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
     <link rel="stylesheet" href="i_am_style_god.css" type="text/css">
+    <script type="text/javascript" src="calcs.js"></script>
 
 </head>
 <body>
 <div id="calc">
-    <div id="screen">
-
+    <div id="screenbox">
+        <div id="screen"></div>
     </div>
 
     <div id="buttons">
 
         <div class="buttrow">
-            <button class="button">CE</button>
-            <button class="button">&Sqrt;</button>
-            <button class="button">&percnt;</button>
-            <button class="button">x<sup>y</sup></button>
+            <button class="button" onclick="reset(true)">CE</button>
+            <button class="button" onclick="display('s')">&Sqrt;</button>
+            <button class="button" onclick="display('p')">&percnt;</button>
+            <button class="button" onclick="display('^')">x<sup>y</sup></button>
 
         </div>
         <div class="buttrow">
-            <button class="button">+</button>
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
+            <button class="button" onclick="display('+')">+</button>
+            <button class="button" onclick="display('1')">1</button>
+            <button class="button" onclick="display('2')">2</button>
+            <button class="button" onclick="display('3')">3</button>
         </div>
         <div class="buttrow">
-            <button class="button">-</button>
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
+            <button class="button" onclick="display('-')">-</button>
+            <button class="button" onclick="display('4')">4</button>
+            <button class="button" onclick="display('5')">5</button>
+            <button class="button" onclick="display('6')">6</button>
         </div>
         <div class="buttrow">
-            <button class="button">&divide;</button>
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
+            <button class="button" onclick="display('/')">&divide;</button>
+            <button class="button" onclick="display('7')">7</button>
+            <button class="button" onclick="display('8')">8</button>
+            <button class="button" onclick="display('9')">9</button>
         </div>
         <div class="buttrow">
-            <button class="button">X</button>
-            <button class="button">.</button>
-            <button class="button">0</button>
-            <button class="button">=</button>
+            <button class="button" onclick="display('X')">X</button>
+            <button class="button" onclick="display('.')">.</button>
+            <button class="button" onclick="display('0')">0</button>
+            <button class="button" onclick="display('=')">=</button>
         </div>
 
     </div>
